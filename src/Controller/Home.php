@@ -11,12 +11,12 @@ class Home extends AbstractController
     #[Route('/', name: 'home')]
     public function home(): Response
     {
-        $name = "Gwendal Nogues";
-        $job = "Développeur web junior";
+        $cv = "TÉLÉCHARGEZ MON CV";
+
 
         return $this->render('home.html.twig', [
-            'name' => $name,
-            'job' => $job
+            'cv' => $cv,
+ 
         ]);
     }
 
