@@ -12,18 +12,22 @@
         {% endblock %}
     </head>
     <body>
-        {% block header %}{% endblock %}
         <header>
-            <nav class="navbar">
-            <a href="{{ path('home') }}"><h2>G W E N D A L <span>&nbsp;</span> N O G U E S</h2></a>
-                <ul>
-                    <li><a href="{{ path('home') }}">A propos</a></li>
-                    <li><a href="{{ path('skills') }}">Skills</a></li>
-                    <li><a href="{{ path('works') }}">Travaux</a></li>
-                    <li><a href="{{ path('contact') }}">Contact</a></li>
-                </ul>
+            <nav class="navbar container">
+            <a href="{{ path('home') }}" class="navName">G W E N D A L</a>
+                <div class="navList">
+                    <ul>
+                        <li><a href="{{ path('home') }}">A propos</a></li>
+                        <li><a href="{{ path('skills') }}">Skills</a></li>
+                        <li><a href="{{ path('works') }}">Travaux</a></li>
+                        <li><a href="{{ path('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        {% block body %}{% endblock %}
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+        
     </body>
 </html>
