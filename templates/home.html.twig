@@ -4,9 +4,16 @@
 
 {% block body %}
 
-    <div class="header-about">
-        <h5>BONJOUR, JE SUIS DÉVELOPPEUR WEB.</h5>
-        <h2>G W E N D A L <span>&nbsp;</span> N O G U E S</h2>
-    </div> 
+    <section class="about">
+        <div class="header-about">
+            <h5 class="home_g">BONJOUR, JE SUIS DÉVELOPPEUR WEB.</h5>
+            <h1 class="home_name">G W E N D A L <span>&nbsp;</span> N O G U E S</h1>
+            <a href="{{ path('cv_download', {'filename': 'cv.pdf' }) }}" class="cv-container">
+                <span>Télécharger mon CV</span
+                ><div class="dash"></div>
+            </a>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div> 
+    </section>
 
 {% endblock %}

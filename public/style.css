@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: grey;
+    background-image: url("./assets/fond.png");
+    background-size: cover;
     text-align: center;
     color: white;
     font-family: sans-serif;
@@ -19,7 +20,7 @@ a {
 /* ##### NAVBAR ##### */
 
 header {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(61, 61, 61, 0.5);
 }
 
 .navbar {
@@ -45,8 +46,8 @@ header {
 .navList {
     position: fixed;
     bottom: 1rem;
-    background-color: rgb(61, 61, 61);
-    width: 22%;
+    background-color: rgb(61, 61, 61, 0.5);
+    width: 400px;
     border-radius: 4rem;
     padding: 1rem 2.25rem;
     left: 0;
@@ -54,10 +55,34 @@ header {
     margin: 0 auto;
 }
 
+.navlist ul li:hover {
+    cursor : pointer;
+}
+
 /* ##### ABOUT ##### */
 
 .header-about {
     margin-top: 1em;
-
 }
 
+.home_g {
+    margin-bottom: 1em;
+}
+
+.home_name {
+    margin-bottom: 1em;
+}
+
+.cv-container {
+    display: flex;
+    align-items: center; /* Aligner verticalement le bouton et le trait */
+    justify-content: center ;
+    margin-bottom: 1em;
+}
+
+.dash {
+    width: 10%;
+    margin-left: 5px;
+    height: 2px; /* Hauteur du trait */
+    background-color: #fff; /* Couleur du trait */
+}
