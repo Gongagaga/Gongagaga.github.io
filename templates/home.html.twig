@@ -12,8 +12,19 @@
                 <span>Télécharger mon CV</span
                 ><div class="dash"></div>
             </a>
-            <i class="fa-solid fa-chevron-down"></i>
+            <img src="{{ asset('assets/cv.jpg') }}" alt="cv" class="cv-scroll"/>
+            <div class="show-cv">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
         </div> 
+        <div class="main-about">
+            <img src="{{ asset('assets/persona.png') }}" alt="persona" class="img-about"/>
+            <p class="pres-about"><span class="title-about">A propos</span><br>Issu de la restauration, un métier qui ne me convenait plus, j'ai découvert lors de la crise du COVID qu'il était possible de faire un travail qui nous plait.<br><br>
+            J'ai donc pris la décision d'enfin me réorienter dans un domaine qui me fascine depuis longtemps, le développement web. J'ai donc rejoint en juin 2022, une formation intensive de 6 mois visant à m'apporter les bases en HTML, CSS, JavaScript et PHP.<br><br>
+            Suite à l'obtention de ce Bac+2, j'ai rejoint une autre formation, en alternance cette fois-ci au sein de STUDIA DIGITAL, visant à consolider mes bases et en acquérir de nouvelles sur différents langages et frameworks et me permettant d'obtenir ma première expérience professionnelle en tant que développeur web.<br><br>
+            J'aimerais maintenant continuer ma formation avec une troisième année en "Concepteur Développeur d'Application" en alternance.</p>
+        </div>
     </section>
+
 
 {% endblock %}
