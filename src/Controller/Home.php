@@ -16,11 +16,11 @@ class Home extends AbstractController
         return $this->render('home.html.twig');
     }
 
-    #[Route('/skills', name: 'skills')]
-    public function skills(): Response
+    #[Route('/formations', name: 'formations')]
+    public function formations(): Response
     {
 
-        return $this->render('skills.html.twig');
+        return $this->render('formations.html.twig');
     }
 
     #[Route('/works', name: 'works')]
