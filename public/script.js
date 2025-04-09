@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Si l'élément fixé est plus bas que le footer, on l'ajuste
         if (footerTop <= window.innerHeight) {
             fixedElement.style.position = 'absolute';
-            fixedElement.style.bottom = `${window.innerHeight - footerTop}px`;
+            fixedElement.style.bottom = `-400px`;
         } else {
             // Sinon, l'élément reste en position fixe
             fixedElement.style.position = 'fixed';
