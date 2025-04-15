@@ -142,7 +142,7 @@ header {
 /* ##### TOOLS ##### */
 
 .tools {
-    width:31%;
+    width:46%;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 2em 2em 2em 4em;
     border-radius: 2em;
@@ -159,7 +159,7 @@ header {
 /* ##### SKILLS ##### */
 
 .skills {
-    width:31%;
+    width:46%;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 2em 2em 2em 4em;
     border-radius: 2em;
@@ -175,7 +175,7 @@ header {
 
 .main-skills {
     display: flex;
-    margin-left: -2.75em;
+    margin-left: -3em;
 }
 
 .skill {
@@ -186,6 +186,41 @@ header {
     text-align: center;
     margin: 0 1em 1em 0;
     font-weight: bold;
+}
+
+/* ##### FORMATIONS ##### */
+
+.formation-titre {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.form {
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 3em 2em 3em 2em;
+    width: 40%;
+    border-radius: 2em;
+    text-align: center;
+    /* margin: 0 1em 1em 0; */
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.formation-img {
+    width: 29%;
+}
+
+.formation-infos {
+    width: 55%;
+    margin: auto;
+}
+
+.form-last {
+    margin-bottom: 10em;
 }
 
 /* ##### MENTIONS LEGALES ##### */
