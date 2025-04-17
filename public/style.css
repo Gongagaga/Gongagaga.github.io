@@ -190,7 +190,7 @@ header {
 
 /* ##### FORMATIONS ##### */
 
-.formation-titre {
+.formation-title {
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -202,7 +202,6 @@ header {
     width: 40%;
     border-radius: 2em;
     text-align: center;
-    /* margin: 0 1em 1em 0; */
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
@@ -221,6 +220,13 @@ header {
 
 .form-last {
     margin-bottom: 10em;
+}
+
+/* ##### WORKS ##### */
+
+.work-title {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /* ##### MENTIONS LEGALES ##### */
