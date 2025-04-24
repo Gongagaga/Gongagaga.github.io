@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 fixedElement.style.bottom = `-680px`;
               }else if(window.location.href.includes("contact")) {
                 fixedElement.style.bottom = `-600px`;
+              }else if(window.location.href.includes("Mentions-legales")) {
+                fixedElement.style.bottom = `50px`;
               }else {
                 fixedElement.style.bottom = `-600px`;
               }
