@@ -243,6 +243,10 @@ header {
     margin-top: 1em;
 }
 
+.work:last-child {
+    margin-bottom: 6em;
+}
+
 .work-front-fit {
     margin-left: auto;
     margin-right: auto;

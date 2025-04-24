@@ -16,7 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
         // Si l'élément fixé est plus bas que le footer, on l'ajuste
         if (footerTop <= window.innerHeight) {
             fixedElement.style.position = 'absolute';
-            fixedElement.style.bottom = `-600px`;
+            if (window.location.href.includes("works")) {
+                fixedElement.style.bottom = `-980px`;
+              }else if(window.location.href.includes("formations")) {
+                fixedElement.style.bottom = `-680px`;
+              }else if(window.location.href.includes("contact")) {
+                fixedElement.style.bottom = `-600px`;
+              }else {
+                fixedElement.style.bottom = `-600px`;
+              }
+            
         } else {
             // Sinon, l'élément reste en position fixe
             fixedElement.style.position = 'fixed';
