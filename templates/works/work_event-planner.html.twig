@@ -1,7 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Works 4{% endblock %}
+{% block title %}Event Planner{% endblock %}
 
 {% block body %}
+
+    <section>
+
+        <h2 class="work-title">Event Planner</h2>
+        <h3>Exercice de fin de module</h3>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="{{ asset('assets/work-4/work-4-1.jpg') }}" alt="slide 1">
+                <img src="{{ asset('assets/work-4/work-4-2.jpg') }}" alt="slide 2">
+                <img src="{{ asset('assets/work-4/work-4-3.jpg') }}" alt="slide 3">
+                <img src="{{ asset('assets/work-4/work-4-4.jpg') }}" alt="slide 4">
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+
+        <div class="detail">
+            <p>Ce projet a été réalisé dans le cadre d'un exercice de fin de module au cours d'une formation.</p> <br>
+            <p>Il avait pour but de mettre en oeuvre tout ce qui avait été vu au cours du module sur Symfony.</p> <br>
+            <p>Nous y retrouvons un système d'inscription et de connexion, des redirections, des créations d'évènements, des commentaires sous les évènements ainsi que des communications avec la base de donnée pour afficher les évènements.</p>
+        </div>
+
+        <div class="techno">
+            <p>Technologie(s) utilisée : </p><br>
+            <a href="https://symfony.com/">
+                <img src="https://cdn.worldvectorlogo.com/logos/symfony.svg" alt="symfony" width="60" height="60"/>
+            </a>
+            <a href="https://twig.symfony.com/">
+                <img src="https://www.drupal.org/files/issues/2023-06-12/twig_tweak_original-fs8.png" alt="twig" width="60" height="60">
+            </a>
+        </div>
+
+    </section>
 
 {% endblock %}

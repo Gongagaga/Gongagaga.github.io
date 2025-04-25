@@ -1,0 +1,41 @@
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+    border-radius: 38em;
+    width: 7.5%;
+}
+
+.carousel-btn.next {
+    right: 10px;
+    border-radius: 38em;
+    width: 7.5%;
+}

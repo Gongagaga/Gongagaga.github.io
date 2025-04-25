@@ -1,7 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Works 2{% endblock %}
+{% block title %}Exercice e-commerce{% endblock %}
 
 {% block body %}
+
+    <section>
+
+        <h2 class="work-title">Site e-commerce</h2>
+        <h3>Exercice de fin de module</h3>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="{{ asset('assets/work-2/work-2-1.jpg') }}" alt="slide 1">
+                <img src="{{ asset('assets/work-2/work-2-2.jpg') }}" alt="slide 2">
+                <img src="{{ asset('assets/work-2/work-2-3.jpg') }}" alt="slide 3">
+                <img src="{{ asset('assets/work-2/work-2-5.jpg') }}" alt="slide 4">
+                <img src="{{ asset('assets/work-2/work-2-6.jpg') }}" alt="slide 5">
+                <img src="{{ asset('assets/work-2/work-2-7.jpg') }}" alt="slide 6">
+                <img src="{{ asset('assets/work-2/work-2-4.jpg') }}" alt="slide 7">
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+
+        <div class="detail">
+            <p>Ce projet a été réalisé dans le cadre d'un exercice de fin de module au cours d'une formation.</p> <br>
+            <p>Il avait pour but de mettre en oeuvre tout ce qui avait été vu au cours du module sur Symfony.</p> <br>
+            <p>Nous y retrouvons un système d'inscription et de connexion, des redirections, des créations de produits, un panier, des avis, des communications avec la base de donnée pour l'affichage ainsi qu'une interface admin permettant de gérer les utilisateurs, les produits, les avis et les catégories de produits.</p>
+        </div>
+
+        <div class="techno">
+            <p>Technologie(s) utilisée : </p><br>
+            <a href="https://symfony.com/">
+                <img src="https://cdn.worldvectorlogo.com/logos/symfony.svg" alt="symfony" width="60" height="60"/>
+            </a>
+            <a href="https://twig.symfony.com/">
+                <img src="https://www.drupal.org/files/issues/2023-06-12/twig_tweak_original-fs8.png" alt="twig" width="60" height="60">
+            </a>
+        </div>
+
+    </section>
 
 {% endblock %}

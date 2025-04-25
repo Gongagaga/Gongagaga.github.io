@@ -4,4 +4,52 @@
 
 {% block body %}
 
+    <section>
+
+        <h2 class="work-title">Mini Projets</h2>
+        <h3>Exercices d'entraînement</h3>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="{{ asset('assets/mini-projet/work-front.png') }}" alt="slide 1">
+                <img src="{{ asset('assets/mini-projet/work-calendar.jpg') }}" alt="slide 2">
+                <img src="{{ asset('assets/mini-projet/work-chrono.jpg') }}" alt="slide 3">
+                <img src="{{ asset('assets/mini-projet/work-click-counter.jpg') }}" alt="slide 4">
+                <img src="{{ asset('assets/mini-projet/work-calcul-binaire.jpg') }}" alt="slide 5">
+                <img src="{{ asset('assets/mini-projet/work-wheel.jpg') }}" alt="slide 6">
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+
+        <div class="detail">
+            <p>Ces projets ont été réalisé dans le cadre d'exercices plus ou moins simple afin de prendre en mains des frameworks ou librairies et tester des choses.</p> <br>
+            <p>Parmis ces projets il y a :</p> <br>  
+            <div class="list">
+                <p>- Un calendrier qui se met à jour en fonction de la date actuelle en JavaScript.</p> 
+                <p>- Un chronomètre en ReactJS.</p>
+                <p>- Un compteur de clic en ReactJS.</p> 
+                <p>- Un convertisseur de nombre décimal en binaire et inversement en JavaScript.</p> 
+                <p>- Une roulette qui s'active au clic en JavaScript/CSS.</p>
+            </div>    
+        </div>
+
+        <div class="techno">
+            <p>Technologie(s) utilisée : </p><br>
+            <a href="https://www.w3.org/html/" rel="noreferrer" target="_blank"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html5" width="40" height="40" /> 
+            </a>
+            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css3" width="40" height="40" /> 
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="javascript" width="40" height="40" /> 
+            </a>
+            <a href="https://reactjs.org/" rel="noreferrer" target="_blank"> 
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> 
+            </a>
+        </div>
+
+    </section>
+
 {% endblock %}

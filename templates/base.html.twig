@@ -6,7 +6,8 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         <script src="https://kit.fontawesome.com/a992aa71c9.js" crossorigin="anonymous"></script>
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
             
         {% endblock %}
 
@@ -40,7 +41,9 @@
             </div>
             <h5 class="legalsFooter">© Gwendal NOGUES | <a href="{{ path('legal') }}">Mentions légales</a></h5>
         </footer>
-        <script src="{{ asset('script.js') }}"></script>
-        <script src="{{ asset('showHide.js') }}"></script>
+
+        <script src="{{ asset('js/carousel.js') }}" defer></script>
+        <script src="{{ asset('js/script.js') }}"></script>
+        <script src="{{ asset('js/showHide.js') }}"></script>
     </body>
 </html>

@@ -16,7 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Si l'élément fixé est plus bas que le footer, on l'ajuste
         if (footerTop <= window.innerHeight) {
             fixedElement.style.position = 'absolute';
-            if (window.location.href.includes("works")) {
+            if(window.location.href.includes("site-vitrine-illustratrice")) {
+                fixedElement.style.bottom = `-300px`;
+              }else if (window.location.href.includes("exercice-ecommerce")) {
+                fixedElement.style.bottom = `-180px`;
+              }else if (window.location.href.includes("mini-reseau-social")) {
+                fixedElement.style.bottom = `-160px`;
+              }else if (window.location.href.includes("event-planner")) {
+                fixedElement.style.bottom = `-160px`;
+              }else if (window.location.href.includes("mini-projets")) {
+                fixedElement.style.bottom = `-410px`;
+              }else if (window.location.href.includes("works")) {
                 fixedElement.style.bottom = `-980px`;
               }else if(window.location.href.includes("formations")) {
                 fixedElement.style.bottom = `-680px`;
@@ -24,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 fixedElement.style.bottom = `-600px`;
               }else if(window.location.href.includes("Mentions-legales")) {
                 fixedElement.style.bottom = `50px`;
+              }else if(window.location.href.includes("site-vitrine-illustratrice")) {
+                fixedElement.style.bottom = `-300px`;
               }else {
                 fixedElement.style.bottom = `-600px`;
               }
