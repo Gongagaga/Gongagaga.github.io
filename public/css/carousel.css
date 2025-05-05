@@ -39,3 +39,15 @@
     border-radius: 38em;
     width: 7.5%;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .carousel-btn.prev {
+        width: 14%;
+    }
+    
+    .carousel-btn.next {
+        width: 14%;
+    }
+
+}

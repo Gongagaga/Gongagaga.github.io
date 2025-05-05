@@ -13,8 +13,26 @@ document.addEventListener('DOMContentLoaded', function () {
         // Position du footer par rapport au bas de la page
         const footerTop = footer.getBoundingClientRect().top;
 
-        // Si l'élément fixé est plus bas que le footer, on l'ajuste
-        if (footerTop <= window.innerHeight) {
+        isMobile = 768;
+
+        if(window.innerWidth <= isMobile ){
+           console.log("is reponsive");
+          // Si l'élément fixé est plus bas que le footer, on l'ajuste
+          if (footerTop <= window.innerHeight) {
+  
+              fixedElement.style.marginBottom = `50%`;
+
+          } else {
+              // Sinon, l'élément reste en position fixe
+              fixedElement.style.position = 'fixed';
+              fixedElement.style.bottom = '30px';
+              fixedElement.style.marginBottom = "auto";
+          }
+
+        } else{
+
+          // Si l'élément fixé est plus bas que le footer, on l'ajuste
+          if (footerTop <= window.innerHeight) {
             fixedElement.style.position = 'absolute';
             if(window.location.href.includes("site-vitrine-illustratrice")) {
                 fixedElement.style.bottom = `-300px`;
@@ -37,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
               }else if(window.location.href.includes("site-vitrine-illustratrice")) {
                 fixedElement.style.bottom = `-300px`;
               }else {
-                fixedElement.style.bottom = `-600px`;
+                fixedElement.style.bottom = `-60%`;
               }
             
         } else {
@@ -45,6 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
             fixedElement.style.position = 'fixed';
             fixedElement.style.bottom = '30px';
         }
+      
+        }
+        
+
+        
     }
 
     // Appel initial pour ajuster l'élément
@@ -53,3 +76,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Écouter le défilement et ajuster la position de l'élément
     window.addEventListener('scroll', adjustFixedElement);
 });
+

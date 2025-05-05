@@ -339,3 +339,105 @@ header {
     margin-top: 2em;
     padding-bottom: 2em;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .navList {
+        width: 90%;
+    }
+
+    /* ##### ABOUT ##### */
+
+    .img-about {
+        width:90%;
+    }
+
+    .pres-about {
+        width:100%;
+    }
+
+    .main-about {
+        display: block;
+        width:90%;
+
+    }
+
+    /* ##### SKILLS ##### */
+
+    .skills {
+        width:90%;
+    }
+
+    
+    .main-skills {
+        display: flex;
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skill {
+        width: 100%;
+    }
+
+    /* ##### TOOLS ##### */
+
+    .tools {
+        width:90%;
+    }
+    
+    /* ##### FORMATIONS ##### */
+
+.form {
+    display: block;
+    width: 90%;
+
+}
+
+.formation-img {
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+.formation-infos {
+    width: 100%;
+}
+
+/* ##### WORKS ##### */
+
+.work {
+    display: block;
+    width: 90%;
+}
+
+.work-front-fit {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-front {
+    width:100%;
+    height: auto;
+    margin-bottom:1em;
+}
+
+.work-front:hover {
+    opacity: 1;
+    transition : opacity 0.2s;
+}
+
+.work-info {
+    width: 90%;
+}
+
+/* ##### WORK ##### */
+
+.detail {
+    width: 90%;
+}
+
+.techno {
+    width: 90%;
+}
+
+}
